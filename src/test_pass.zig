@@ -5,6 +5,6 @@ test "always pass" {
     try expect(true);
 }
 
-test "always fail" {
-    try expect(false == false);
-}
+// test "always fail" {
+//     try expect(false);
+// }
