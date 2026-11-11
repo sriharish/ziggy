@@ -35,14 +35,35 @@ const std = @import("std");
 
 // 4. While Loop
 
-pub fn main() void {
-    var sum: i16 = 0;
-    var i: i16 = 0;
-    while (i < 3) : (i += 1) {
-        if (i == 2) break;
-        sum += i;
-    }
+// pub fn main() void {
+//     var sum_i: i16 = 0;
+//     var sum_j: i16 = 0;
+//     var i: i16 = 0;
+//     var j: i16 = 0;
 
-    std.debug.print("Sum: {d}\n", .{sum});
-    std.debug.print("i: {d}\n", .{i});
-}
+//     while (i < 3) : ({
+//         i += 1;
+//         j += 2;
+//     }) {
+//         if (i == 2) break;
+//         sum_i += i;
+//         sum_j += j;
+//     }
+
+//     std.debug.print("Sum of I: {d}\n", .{sum_i});
+//     std.debug.print("i: {d}\n", .{i});
+//     std.debug.print("Sum of J: {d}\n", .{sum_j});
+//     std.debug.print("j: {d}\n", .{j});
+// }
+
+// 5. For Loop
+// pub fn main() void {
+//     const name = "harish";
+
+//     for (name, 0..) |c, i| {
+//         std.debug.print("{c}", .{c});
+//         _ = i;
+//     }
+
+//     std.debug.print("\n", .{});
+// }
