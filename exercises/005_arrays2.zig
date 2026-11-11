@@ -21,21 +21,13 @@ pub fn main() void {
     // (Problem 1)
     // Please set this array concatenating the two arrays above.
     // It should result in: 1 3 3 7
-    const leet = ???;
+    const leet = le ++ et;
 
     // (Problem 2)
     // Please set this array using repetition.
     // It should result in: 1 0 0 1 1 0 0 1 1 0 0 1
-    // To solve this problem, please continue reading.
-    const bit_pattern_unit = ???;
-
-    // How long should the bit pattern be?
-    const len = ???;
-
-    // For now, don't worry about the use of SIMD.
-    // However, this is a good time to try zig's amazing self-hosted documentation.
-    // Please try: `zig std` on the command-line and search for the repeat function in the browser.
-    const bit_pattern: [len]u8 = std.simd.repeat(len, bit_pattern_unit);
+    const bit_pattern_unit = [_]u8{ 1, 0, 0, 1 };
+    const bit_pattern: [3 * bit_pattern_unit.len]u8 = @bitCast(@as([3][bit_pattern_unit.len]u8, @splat(bit_pattern_unit)));
 
     // Okay, that's all of the problems. Let's see the results.
     //
