@@ -67,3 +67,13 @@ const std = @import("std");
 
 //     std.debug.print("\n", .{});
 // }
+
+// 6. Functions
+
+// pub fn addFive(n: u32) u32 {
+//     return n +| 5;
+// }
+// pub fn main() void {
+//     const sum = addFive(55);
+//     std.debug.print("{d}\n", .{sum});
+// }
