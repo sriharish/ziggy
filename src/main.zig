@@ -77,3 +77,17 @@ const std = @import("std");
 //     const sum = addFive(55);
 //     std.debug.print("{d}\n", .{sum});
 // }
+
+// 7. Defer
+
+pub fn deferredAdd(n: u32) void {
+    var sum = n;
+    // also returns n + 5
+    defer std.debug.print("After Defer: {d}\n", .{sum});
+    defer sum += 5;
+    std.debug.print("Before Defer: {d}\n", .{sum});
+}
+
+pub fn main() void {
+    deferredAdd(5);
+}
